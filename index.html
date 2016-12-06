@@ -1,9 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-    <link rel="stylesheet" href="/main.css">
-</head>
-<body><h1>Welcome to Harp.</h1>
+    <meta charset="UTF-8">
+    <title>Maxim Van der Veken</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
 
-<h3>This is yours to own. Enjoy.</h3></body>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'>
+    <link rel='stylesheet prefetch' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+<nav>
+    <ul class="nav">
+        <li><a class = "menuhover" href="#who">Who</a></li>
+        <li><a class = "menuhover" href="#what">what</a></li>
+        </li>
+        <li><a class = "menuhover" href="#work">work</a></li>
+        <li><a class = "menuhover" href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+<svg id="logoboven" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="566.93px" height="566.93px" viewBox="0 0 566.93 566.93" enable-background="new 0 0 566.93 566.93" xml:space="preserve">
+<g id="Logo1" class="fade-in vijf">
+	<polygon points="185.529,274.599 182.694,274.599 182.694,62.002 185.529,64.837 	"/>
+	<polygon points="381.4,100.836 381.4,69.089 265.749,185.309 211.041,130.6 211.041,274.599 208.206,274.599 208.206,87.514
+		283.607,162.915 384.236,62.002 384.236,274.599 381.4,274.599 381.4,105.088 358.725,127.766 358.725,274.599 355.891,274.599
+		355.891,130.6 283.607,203.167 281.623,201.182 	"/>
+	<polygon fill="#808285" stroke="#000000" stroke-miterlimit="10" points="265.465,180.773 281.307,164.931 258.978,142.601
+		258.978,174.285 	"/>
+	<g>
+		<polygon fill="#808285" stroke="#000000" stroke-miterlimit="10" points="336.238,114.862 336.238,146.187 326.863,155.562
+			327.074,155.773 381.5,101.348 381.5,69.601 		"/>
+		<polygon fill="#808285" stroke="#000000" stroke-miterlimit="10" points="336.238,114.862 336.238,114.439 265.939,184.738
+			281.813,200.612 326.863,155.562 311.201,139.899 		"/>
+	</g>
+	<polygon points="357.725,128.433 381.5,128.433 381.5,127.333 358.824,127.333 	"/>
+	<polygon points="184.474,128.433 209.304,128.433 209.304,127.333 185.622,127.333 	"/>
+</g>
+<g id="V1" class="fade-in een">
+	<path stroke="#000000" stroke-miterlimit="10" d="M234.58,255.504l-20.318-40.823h0.627l19.69,39.444l2.76-5.519l-16.869-33.925
+		h0.627l16.556,33.235l16.555-33.235h0.69C237.465,249.608,237.967,248.479,234.58,255.504z M261.043,214.681l-23.39,47.031
+		l-0.376-0.689c3.512-6.835,2.947-5.769,23.14-46.342H261.043z"/>
+</g>
+<g id="D1" class="fade-in twee">
+	<path stroke="#808285" stroke-miterlimit="10" d="M266.69,220.324h15.677c9.845,0,17.872,8.026,17.872,17.871
+		c0,9.845-8.026,17.872-17.872,17.872h-9.407v5.018h9.407c12.605,0,22.888-10.284,22.888-22.89
+		c0-12.604-10.283-22.888-22.888-22.888H266.69v-0.627h15.677c12.98,0,23.516,10.534,23.516,23.515
+		c0,12.982-10.536,23.517-23.516,23.517h-10.034v-40.761h-5.016v40.761h-0.627V220.324z M282.368,220.951h-9.407v34.49h9.407
+		c9.532,0,17.244-7.714,17.244-17.246C299.611,228.665,291.899,220.951,282.368,220.951z"/>
+</g>
+<g id="V2" class="fade-in een">
+	<path stroke="#000000" stroke-miterlimit="10" d="M326.203,255.504l-20.318-40.823h0.629l19.689,39.444l2.761-5.519l-16.869-33.925
+		h0.628l16.554,33.235l16.556-33.235h0.69C329.088,249.608,329.591,248.479,326.203,255.504z M352.667,214.681l-23.391,47.031
+		l-0.376-0.689c3.512-6.835,2.948-5.769,23.14-46.342H352.667z"/>
+</g>
+<g id="Lijn" class="fade-in drie">
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="217.465" y1="274.599" x2="349.465" y2="274.599"/>
+</g>
+<g id="Wenkbrauw" class="fade-in vier">
+	<g>
+		<polygon points="182.793,56.987 189.349,63.027 195.841,69.132 208.821,81.345 234.489,106.063 240.905,112.244 247.248,118.497
+			259.922,131.016 285.266,156.057 281.662,156.057 307.009,131.019 319.683,118.499 326.03,112.25 332.445,106.068 358.112,81.35
+			371.091,69.134 377.582,63.029 384.136,56.987 384.337,57.187 283.664,158.06 283.464,158.26 283.264,158.06 182.593,57.187 		"/>
+	</g>
+</g>
+</svg>
+
+<div class="container" id="who">
+    <h2>Who am i?</h2>
+
+
+    <img id="imgprofile" class="img-responsive img-circle margin" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/816546/profile/profile-512_1.jpg"></img>
+
+    <p class="pright">
+        My name is Maxim Van der Veken
+    </p><p class="pright">
+    I am a 25-year old web and graphic designer who studies Graphic and Digital Media at the Artesis Plantijn Highschool in Antwerp.
+</p><p class="pright"> In my free time I like to work on private projects, such as photography, webdesigning, visual effects and graphic design.
+</p>
+</div>
+<div class="container" id="what">
+    <h2>What do i Do?</h2>
+    <img id="imgrechts" src="http://www.fluxcreative.co.uk/lib/img/pages/design/hand-coded-websites.png"></img>
+    <p class="pleft">At young age I already enjoyed working with computers.It was clear that I was going to search for a profession that involved computers.<br>I made my first basic website when I was 10 years old together with a friend, and that passion has grown a lot since that day. </p> <p class="pleft">Today, I study Crossmedia-design. This education has taught me a lot about the web and even more about graphic design. I have used my knowledge from studies and my own interest in my recent projects. This covers all workarea's I am interested in. Front-end developer & designer, graphic designer and photographer.</p>
+</div>
+<div class="container" id="work">
+    <h2>A collection of my work </h2>
+
+    <div class="carousel"
+         data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"><img src="http://mobileseopros.com/wp-content/uploads/2014/09/responsive_web_design.jpg"></img></div>
+        <div class="carousel-cell"><img src="http://tweakyourbiz.com/technology/files/shutterstock_174574130.jpg"></img></div>
+        <div class="carousel-cell"><img src="https://images.freecreatives.com/wp-content/uploads/2015/05/HD-Vintage-Photography-Wallpaper.jpg"></img></div>
+        <div class="carousel-cell"><img src="http://www.rayawallpaper.com/wp-content/uploads/2016/04/vintage-photography-wallpaper-desktop-images.jpg"></img></div>
+        <div class="carousel-cell"><img src="https://dannycoyne.files.wordpress.com/2010/07/abstract3.png"></img></div>
+    </div>
+
+
+</div>
+<div class="container" id="contact">
+    <h2>Contact me </h2>
+    <form class="pure-form pure-form-aligned">
+
+        <fieldset>
+
+            <div class="pure-control-group">
+                <label for="name">Voornaam</label>
+                <input id="name" type="text" placeholder="Voornaam">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="name">Achternaam</label>
+                <input id="achternaam" type="text" placeholder="Achternaam">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="name">Boodschap</label>
+                <input id="message" type="text" placeholder="Boodschap">
+            </div>
+
+
+            <div class="pure-controls">
+
+
+                <button type="submit" class="pure-button pure-button-primary">Verzend</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+
+<script src="js/index.js"></script>
+
+</body>
 </html>
