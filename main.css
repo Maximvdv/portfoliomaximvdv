@@ -1,19 +1,241 @@
-body {
-    font-family: "Helvetica";
+@import url('https://fonts.googleapis.com/css?family=Exo:200|Lato:300|Open+Sans+Condensed:300|Open+Sans:800');
+
+nav ul{
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    list-style: none;
+    color: grey;
+    margin-top: 3em;
+
+}
+nav li {
+    flex: auto;
+}
+
+nav li::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    background: #10B4FF;
+    width: 1em;
+    margin-top: -5px;
+    margin-bottom: 3em;
+}
+
+.menuhover {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menuhover:hover{
+    color: #10B4FF;
+
+
+}
+#maximvdv{
     text-align: center;
-    padding: 50px 20px 0;
-    background: #f4f4f7;
-    color: #444;
-    margin: 0
+    padding: 0px;
+    font-size: 30px;
+    opacity: 0.4;
+    text-decoration: none;
+    color: #10B4FF;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 100;
+
+}
+h2::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    background: white;
+    opacity: .2;
+    width: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 1em;
+}
+#who{
+    background-color: #2E2E40;
+    margin-bottom: 1em;
+}
+#what{
+    background-color: #368DD9;
+    margin-bottom: 1em;
+}
+#work{
+    background-color: #44AFF2;
+    margin-bottom: 1em;
+}
+#contact{
+    background-color: #50C4F2;
+    margin-bottom: 1em;
+}
+.pright{
+    font-size: 1.3em;
+    padding-bottom:20px;
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-right: 3em;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.pleft{
+    font-size: 1.3em;
+    padding-bottom:20px;
+    width: 50%;
+    text-align: left;
+    float: left;
+    margin-left: 3em;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1 {
-    font-size: 65px;
-    line-height: 1.2em;
-    border-bottom: #CCC solid 1px;
-    padding: 20px 0
+#imgprofile{
+    width: 20%;
+    display: inline;
+    float: left;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 4px;
+    position: relative;
+    margin-left: 8em;
+    max-width: 50%;
+    margin-bottom: 2em;
+    -webkit-box-shadow: 0px 10px 25px 6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 10px 25px 6px rgba(0,0,0,1);
+    box-shadow: 0px 10px 25px 6px rgba(0,0,0,1);
+
 }
 
-h3 {
-    font-weight: 300
+#message{
+    height: 7em;
 }
+
+.pure-form{
+    margin: auto;
+    text-align: center;
+}
+
+#imgrechts{
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+#logoboven{
+    width: 20%;
+    height: auto;
+    padding-bottom: 1.5em;
+    margin: auto;
+    display: block;
+}
+
+.carousel {
+
+}
+
+.carousel-cell {
+    width: 50%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    margin-bottom: 5em;
+}
+
+.flickity-page-dots{
+    line-height: 8;
+
+}
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.fade-in.een {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.fade-in.twee {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.fade-in.drie {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.fade-in.vier {
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.fade-in.vijf{
+    -webkit-animation-delay: 4.5s;
+    -moz-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+
